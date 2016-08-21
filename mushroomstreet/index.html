@@ -1,0 +1,678 @@
+<!doctype html>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript"> 
+  var curIndex = 0; 
+  var timeInterval = 1000; 
+  var arr = new Array(); 
+  arr[0] = "imgs/8.jpg"; 
+  arr[1] = "imgs/6.jpg"; 
+  arr[2] = "imgs/7.png"; 
+  setInterval(changeImg,timeInterval); 
+  function changeImg() { 
+   var obj = document.getElementById("obj"); 
+   if (curIndex == arr.length-1) { 
+    curIndex = 0; 
+   } else { 
+    curIndex += 1; 
+     } 
+   obj.src = arr[curIndex]; 
+  } 
+ </script> 
+
+ <!-- <script language="javascript"> 
+  setInterval(test,1000); 
+  var array = new Array(); 
+  var index = 0; 
+  var array = new Array("image/1.jpg","image/2.jpg","image/3.jpg","image/4.jpg","image/5.jpg","image/6.jpg","image/7.jpg","image/8.jpg","image/9.jpg","image/10.jpg"); 
+  function test() { 
+   var myimg=document.getElementById("imgs"); 
+   if(index==array.length-1) 
+   { index=0; }else{ index++; } 
+   myimg.src=array[index]; 
+  } 
+ </script> -->
+	<!-- 头部 -->
+	<header>
+		<!-- 头部一 -->
+		<div class="headerTop">
+			<ul>
+				<li><a href="#">注册</a><a href="#">登录</a></li>
+				<li><a href="#"><i class="iconfont1">&#xe61a;</i>我的订单</a></li>
+				<li><a href="#"><i class="iconfont1 iconCo">&#xe68c;</i>购物车</a>
+					<ul class="widthShop">
+						<li ><a href="#">购物车里没有商品</a></li>
+					</ul>
+				</li>
+				<li><a href="#">客户服务<i class="iconfont1">&#xe608;</i></a>
+					<ul>
+						<li><a href="#">消费者服务</a></li>
+						<li><a href="#">商家服务</a></li>
+						<li><a href="#">规则中心</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><i class="iconfont1 iconCo">&#xe627;</i>我的小店<i class="iconfont1">&#xe608;</i></a>
+					<ul>
+						<li><a href="#">管理后台</a></li>
+						<li><a href="#">商家社区</a></li>
+						<li><a href="#">商家培训</a></li>
+						<li><a href="#">市场入驻</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<!-- 头部二 -->
+		<div class="headerSec width_1200">
+			<div class="headerSecL boxSizing">
+				<div class="LogoSearch">
+					<!-- logo -->
+					<div class="logo"><img src="imgs/logo.png" alt="图片"></div>
+					<!-- 搜索框 -->
+					<div class="search">
+						<div class="searchForm">
+							<select name="Pro">
+								<option value="1">搜产品</option>
+								<option value="2">商品</option>
+								<option value="3">店铺</option>
+							</select>
+							<input type="text" value="" placeholder="靓丽装扮拎出来">
+							<div class="searchIcon"><i class="iconfont1 iconCo2">&#xe61b;</i></div>
+							<div classs="clear"></div>
+							<ul>
+								<li><a href="#">衬衫</a></li>
+								<li><a href="#">连衣裙</a></li>
+								<li><a href="#">运动鞋</a></li>
+								<li><a href="#">睡衣</a></li>
+								<li><a href="#">小白鞋</a></li>
+								<li><a href="#">T恤</a></li>
+								<li><a href="#">卫衣</a></li>
+								<li><a href="#">单鞋</a></li>
+								<li><a href="#">斜跨小包</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<!-- 全部商品 -->
+				<div class="allpro ">
+					<ul>
+						<li>全部商品</li>
+						<li><a href="#">团购</a></li>
+						<li><a href="#">快抢</a></li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+			</div>
+			<!-- 二维码 -->
+			<div class="headerSecR boxSizing">
+				<img src="imgs/2.gif" alt="图片">
+				<img src="imgs/1.png" alt="图片">
+			</div>
+			<div class="clear"></div>	
+		</div>
+	</header>
+	<!-- 线 -->
+	<div class="line"></div>
+
+	<!-- 主体内容 -->
+	<section>
+		<!-- 主体一 -->
+		<div class="mainwrap boxSizing width_1200">
+			<!-- 左侧边栏 -->
+			<div class="sidebar boxSizing border">
+				<ul>
+					<li>
+						<dl>
+							<dt><a href="#">上衣</a></dt>
+							<span>
+								<a href="#" class="fontColor">春上新</a>
+								<a href="#">春上新</a>
+								<a href="#">春上新</a>
+							</span>
+						</dl>
+						<!-- 二级菜单 -->
+						<div class="menu_sec">
+							<ul>
+								<li>
+									<dl>
+										<dt><a href="#">衣上</a></dt><br>
+										<span>
+											<a href="#">纯色T恤</a>
+											<a href="#"  class="fontColor">内衣套装</a>
+											<a href="#">春上新</a>
+											<a href="#">纯色T恤</a>
+										</span><br>
+										<span>
+											<a href="#">裙子</a>
+											<a href="#">纯色T恤</a>
+											<a href="#">春上新</a>
+											<a href="#">裙子</a>
+										</span><br>
+										<span>
+											<a href="#">纯色T恤</a>
+											<a href="#">裙子</a>
+											<a href="#">纯色T恤</a>
+											<a href="#">春上新</a>
+										</span><br>
+									</dl>
+
+									<dl>
+										<dt><a href="#">衣上</a></dt><br>
+										<span>
+											<a href="#">纯色T恤</a>
+											<a href="#">内衣套装</a>
+											<a href="#">春上新</a>
+											<a href="#"  class="fontColor">纯色T恤</a>
+										</span><br>
+										<span>
+											<a href="#">裙子</a>
+											<a href="#">纯色T恤</a>
+											<a href="#">春上新</a>
+											<a href="#">裙子</a>
+										</span><br>
+										<span>
+											<a href="#">纯色T恤</a>
+											<a href="#">裙子</a>
+											<a href="#"  class="fontColor">纯色T恤</a>
+											<a href="#">春上新</a>
+										</span><br>
+									</dl>
+
+									<dl>
+										<dt><a href="#">衣上</a></dt><br>
+										<span>
+											<a href="#">纯色T恤</a>
+											<a href="#">内衣套装</a>
+											<a href="#">春上新</a>
+											<a href="#">纯色T恤</a>
+										</span><br>
+										<span>
+											<a href="#" class="fontColor">裙子</a>
+											<a href="#">纯色T恤</a>
+											<a href="#">春上新</a>
+											<a href="#">裙子</a>
+										</span><br>
+										<span>
+											<a href="#">纯色T恤</a>
+											<a href="#">裙子</a>
+											<a href="#">纯色T恤</a>
+											<a href="#">春上新</a>
+										</span><br>
+									</dl>
+
+									<dl>
+										<img src="imgs/erji.jpg" alt="图片">
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+					<li>
+						<dl>
+							<dt><a href="#">上衣</a></dt>
+							<span>
+								<a href="#">春上新</a>
+								<a href="#" class="fontColor">春上新</a>
+								<a href="#">春上新</a>
+							</span>
+						</dl>
+						<!-- 二级菜单 -->
+						
+					</li>
+					<li>
+						<dl>
+							<dt><a href="#">上衣</a></dt>
+							<span>
+								<a href="#">春上新</a>
+								<a href="#" class="fontColor">春上新</a>
+								<a href="#">春上新</a>
+							</span>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><a href="#">上衣</a></dt>
+							<span>
+								<a href="#" class="fontColor">春上新</a>
+								<a href="#">春上新</a>
+								<a href="#">春上新</a>
+							</span>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><a href="#">上衣</a></dt>
+							<span>
+								<a href="#" class="fontColor">春上新</a>
+								<a href="#">春上新</a>
+								<a href="#" class="fontColor">春上新</a>
+							</span>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><a href="#">上衣</a></dt>
+							<span>
+								<a href="#">春上新</a>
+								<a href="#" class="fontColor">春上新</a>
+								<a href="#" class="fontColor">春上新</a>
+							</span>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><a href="#">上衣</a></dt>
+							<span>
+								<a href="#" class="fontColor">春上新</a>
+								<a href="#" class="fontColor">春上新</a>
+								<a href="#">春上新</a>
+							</span>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><a href="#">上衣</a></dt>
+							<span>
+								<a href="#" class="fontColor">春上新</a>
+								<a href="#">春上新</a>
+								<a href="#">春上新</a>
+							</span>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><a href="#">上衣</a></dt>
+							<span>
+								<a href="#" class="fontColor">春上新</a>
+								<a href="#">春上新</a>
+								<a href="#">春上新</a>
+							</span>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><a href="#">上衣</a></dt>
+							<span>
+								<a href="#" >春上新</a>
+								<a href="#" class="fontColor">春上新</a>
+								<a href="#">春上新</a>
+							</span>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><a href="#">上衣</a></dt>
+							<span>
+								<a href="#">春上新</a>
+								<a href="#" class="fontColor">春上新</a>
+								<a href="#" class="fontColor">春上新</a>
+							</span>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><a href="#">上衣</a></dt>
+							<span>
+								<a href="#" class="fontColor">春上新</a>
+								<a href="#">春上新</a>
+								<a href="#">春上新</a>
+							</span>
+						</dl>
+					</li>
+					<!-- <div class="clear"></div> -->
+				</ul>
+			</div>
+			<div class="primary-main ">
+
+				<!-- 轮播图 -->
+  				<img id = "obj" src = "imgs/3.jpg" border = 0 /> 
+
+				<!-- <div class="pri-main-banner boxSizing "></div> -->
+				<!-- 右侧小图 -->
+				<div class="primary-main-pic boxSizing">
+					<ul>
+						<li><a href="#"><img src="imgs/a.jpg" alt="图片"></a></li>
+						<li><a href="#"><img src="imgs/b.png" alt="图片"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<!-- 主体二 -->
+		<div class="pro-columnF boxSizing width_1200 ">
+			<div class="pro-columnOne"><img src="imgs/aa.png" alt="图片"></div>
+			<div class="pro-columnTwo "><img src="imgs/12.jpg" alt="图片"><img src="imgs/13.png" alt="图片"></div>
+			<div class="pro-columnThr"><img src="imgs/14.jpg" alt="图片"><img src="imgs/15.jpg" alt="图片"></div>
+			<div class="clear"></div>
+		</div>
+
+		<!-- 主体三 -->
+		<div class="pro-columnS width_1200 margin-top_80">
+			<!-- 名牌馆 -->
+			<div class="SplitLine boxSizing">
+				<div class="lineL Sline boxSizing "><img src="imgs/fgx.png" alt="图片"></div>
+				<h2>品牌馆</h2>
+				<div class="lineR Sline boxSizing "><img src="imgs/fgx.png" alt="图片"></div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="proPic boxSizing ">
+				<div class="proPicL boxSizing ">
+					<div class="proPicLT"><img src="imgs/16.jpg" alt="图片"></div>
+					<div class="proPicLB">
+						<ul>
+							<li><a href="#"><span></span><img src="imgs/17.png" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/18.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/19.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/20.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/21.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/22.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/23.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/24.jpg" alt="图片"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="proPicR boxSizing ">
+					<a href="#"><img src="imgs/17.jpg" alt="图片"></a>
+					<ul class="boxSizing">
+						<li><a href="#"><img src="imgs/26.jpg" alt="图片"></a><span><a href="#">春装精品</a></span></li>
+						<li><a href="#"><img src="imgs/27.jpg" alt="图片"></a><span><a href="#">气质美裙</a></span></li>
+						<li><a href="#"><img src="imgs/28.jpg" alt="图片"></a><span><a href="#">韩版外套</a></span></li>
+						<li><a href="#"><img src="imgs/29.jpg" alt="图片"></a><span><a href="#">品质上衣</a></span></li>
+						<li><a href="#"><img src="imgs/30.jpg" alt="图片"></a><span><a href="#">热门T恤</a></span></li>
+						<li><a href="#"><img src="imgs/31.jpg" alt="图片"></a><span><a href="#">时尚女裤</a></span></li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		<!-- 运动 -->
+		<div class="pro-columnS width_1200 margin-top_80">
+			
+			<div class="SplitLine boxSizing">
+				<div class="lineL Sline boxSizing "><img src="imgs/fgx.png" alt="图片"></div>
+				<h2>运动</h2>
+				<div class="lineR Sline boxSizing "><img src="imgs/fgx.png" alt="图片"></div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="proPic boxSizing ">
+				<div class="proPicL boxSizing ">
+					<div class="proPicLT"><img src="imgs/32.png" alt="图片"></div>
+					<div class="proPicLB">
+						<ul>
+							<li><a href="#"><span></span><img src="imgs/17.png" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/18.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/19.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/20.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/21.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/22.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/23.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/24.jpg" alt="图片"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="proPicR boxSizing ">
+					<a href="#"><img src="imgs/aaa.png" alt="图片"></a>
+					<ul class="boxSizing">
+						<li><a href="#"><img src="imgs/39.jpg" alt="图片"></a><span><a href="#">女运动鞋</a></span></li>
+						<li><a href="#"><img src="imgs/40.jpg" alt="图片"></a><span><a href="#">女休闲鞋</a></span></li>
+						<li><a href="#"><img src="imgs/41.jpg" alt="图片"></a><span><a href="#">运动上衣</a></span></li>
+						<li><a href="#"><img src="imgs/42.jpg" alt="图片"></a><span><a href="#">男运动鞋</a></span></li>
+						<li><a href="#"><img src="imgs/43.jpg" alt="图片"></a><span><a href="#">运动裤</a></span></li>
+						<li><a href="#"><img src="imgs/44.jpg" alt="图片"></a><span><a href="#">健身器械</a></span></li>
+						<div class="clear"></div>
+					</ul>
+
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<!-- 主体四 -->
+		<!-- 红人 Basaar -->
+		<div class="pro-columnT width_1200 margin-top_80">
+			<div class="SplitLine boxSizing">
+				<div class="lineL Sline boxSizing "><img src="imgs/fgx.png" alt="图片"></div>
+				<h2>红人 Basaar</h2>
+				<div class="lineR Sline boxSizing "><img src="imgs/fgx.png" alt="图片"></div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="proPic boxSizing ">
+				<div class="proPicL boxSizing Mcenter">
+					<div class="proPicLPic">
+						<div class="proPicLOne"><img src="imgs/45.jpg" alt="图片"></div>
+						<div class="proPicLOne"><img src="imgs/46.jpg" alt="图片"></div>
+					</div>
+					<div class="proPicLThr">
+						<ul>
+							<li><a href="#">设计频道</a></li>
+							<li><a href="#">设计频道</a></li>
+							<li><a href="#">设计频道</a></li>
+							<li><a href="#">设计频道</a></li>
+							<li><a href="#">设计频道</a></li>
+							<li><a href="#">设计频道</a></li>
+							<li><a href="#">设计频道</a></li>
+							<li><a href="#">设计频道</a></li>
+							<li><a href="#">设计频道</a></li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+				</div>
+				<div class="proPic_tu boxSizing">
+					<img src="imgs/47.jpg" alt="图片">
+					<img src="imgs/50.jpg" alt="图片">
+					<div class="decr">
+						<span>早春感潮流外套</span><br>
+						<span>流行趋势早早入荷！</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="proPic_tu boxSizing">
+					<img src="imgs/48.jpg" alt="图片">
+					<img src="imgs/51.jpg" alt="图片">
+					<div class="decr">
+						<span>早春感潮流外套</span><br>
+						<span>流行趋势早早入荷！</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="proPic_tu boxSizing">
+					<img src="imgs/49.jpg" alt="图片">
+					<img src="imgs/52.jpg" alt="图片">
+					<div class="decr">
+						<span>早春感潮流外套</span><br>
+						<span>流行趋势早早入荷！</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<!-- 心水好货 -->
+		<div class="pro-columnT width_1200 margin-top_80">
+			<div class="SplitLine boxSizing">
+				<div class="lineL Sline boxSizing "><img src="imgs/fgx.png" alt="图片"></div>
+				<h2>红人 Basaar</h2>
+				<div class="lineR Sline boxSizing "><img src="imgs/fgx.png" alt="图片"></div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="proPic boxSizing ">
+				<div class="proPicL boxSizing Mcenter">
+					<div class="proPicLPic">
+						<div class="proPicLOne"><img src="imgs/53.jpg" alt="图片"></div>
+						<div class="proPicLOne"><img src="imgs/54.jpg" alt="图片"></div>
+					</div>
+					<div class="proPicLThr">
+						<ul>
+							<li><a href="#">最爱文具</a></li>
+							<li><a href="#">最爱文具</a></li>
+							<li><a href="#">最爱文具</a></li>
+							<li><a href="#">最爱文具</a></li>
+							<li><a href="#">最爱文具</a></li>
+							<li><a href="#">最爱文具</a></li>
+							<li><a href="#">最爱文具</a></li>
+							<li><a href="#">最爱文具</a></li>
+							<li><a href="#">最爱文具</a></li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+				</div>
+				<div class="proPic_tu boxSizing">
+					<img src="imgs/55.jpg" alt="图片">
+					<img src="imgs/58.jpg" alt="图片"> 
+					<div class="decr">
+						<span>早春感潮流外套</span><br>
+						<span>流行趋势早早入荷！</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="proPic_tu boxSizing">
+					<img src="imgs/56.jpg" alt="图片">
+					<img src="imgs/59.jpg" alt="图片">
+					<div class="decr">
+						<span>早春感潮流外套</span><br>
+						<span>流行趋势早早入荷！</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="proPic_tu boxSizing">
+					<img src="imgs/57.jpg" alt="图片">
+					<img src="imgs/60.jpg" alt="图片">
+					<div class="decr">
+						<span>早春感潮流外套</span><br>
+						<span>流行趋势早早入荷！</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<!-- 蘑菇良品 -->
+		<div class="pro-columnS width_1200 margin-top_80">
+			<div class="SplitLine boxSizing">
+				<div class="lineL Sline boxSizing "><img src="imgs/fgx.png" alt="图片"></div>
+				<h2>运动</h2>
+				<div class="lineR Sline boxSizing "><img src="imgs/fgx.png" alt="图片"></div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="proPic boxSizing ">
+				<div class="proPicL boxSizing ">
+					<div class="proPicLT"><img src="imgs/61.jpg" alt="图片"></div>
+					<div class="proPicLB">
+						<ul>
+							<li><a href="#"><span></span><img src="imgs/z.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/z.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/z.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/z.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/z.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/z.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/z.jpg" alt="图片"></a></li>
+							<li><a href="#"><span></span><img src="imgs/z.jpg" alt="图片"></a></li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="proPicR boxSizing ">
+					<a href="#"><img src="imgs/b.jpg" alt="图片"></a>
+					<ul class="boxSizing">
+						<li><a href="#"><img src="imgs/q.jpg" alt="图片"></a><span><a href="#">休闲半身裙</a></span></li>
+						<li><a href="#"><img src="imgs/w.jpg" alt="图片"></a><span><a href="#">就是这么显瘦</a></span></li>
+						<li><a href="#"><img src="imgs/e.jpg" alt="图片"></a><span><a href="#">超显高短裤</a></span></li>
+						<li><a href="#"><img src="imgs/r.jpg" alt="图片"></a><span><a href="#">减龄必备</a></span></li>
+						<li><a href="#"><img src="imgs/t.jpg" alt="图片"></a><span><a href="#">粉嫩马卡龙</a></span></li>
+						<li><a href="#"><img src="imgs/y.jpg" alt="图片"></a><span><a href="#">学院连衣裙</a></span></li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</section>
+	
+	<!-- 尾部 -->
+	<footer>
+		<div class="footCopy margin-top_80">
+			<div class="footerInfo width_1200">
+				<div class="footL">
+					<img src="imgs/logo2.png" alt="图片">
+					<div class="info_text">
+						<p>营业执照注册号：330106000129004</p>
+						<p>增值电信业务经营许可证：浙B2-20110349</p>
+						<p>ICP备案号：浙ICP备10044327号-3</p>
+						<p>©2016 Mogujie.com 杭州卷瓜网络有限公司</p>
+					</div>
+				</div>
+				<div class="footR">
+					<dl>
+						<dt><a href="#">公司</a></dt>
+						<dd><a href="#">关于我们</a></dd>
+						<dd><a href="#">招聘信息</a></dd>
+						<dd><a href="#">联系我们</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="#">消费者</a></dt>
+						<dd><a href="#">消费者服务</a></dd>
+						<dd><a href="#">意见反馈</a></dd>
+						<dd><a href="#">手机版下载</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="#">商家</a></dt>
+						<dd><a href="#">商家入驻</a></dd>
+						<dd><a href="#">管理后台</a></dd>
+						<dd><a href="#">商家培训</a></dd>
+						<dd><a href="#">商家社区</a></dd>
+					</dl>
+					<dl class="dlLast">
+						<dt><a href="#">权威认证</a></dt>
+						<dd><img src="imgs/d11.png" alt="图片"><img src="imgs/d12.png" alt="图片"><img src="imgs/d13.png" alt="图片"></dd>
+					</dl>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footFLink width_1200">
+			<span>友情链接:
+				<a href="#">淘粉吧</a>
+				<a href="#">蘑菇街团购网</a>
+				<a href="#">蘑菇街女街</a>
+				<a href="#">蘑菇街男街</a>
+				<a href="#">蘑菇街鞋子</a>
+				<a href="#">蘑菇街包包</a>
+				<a href="#">蘑菇街家居</a>
+				<a href="#">家居网</a>
+				<a href="#">时尚品牌网</a>
+				<a href="#">装修</a>
+				<a href="#">蘑菇街女婴</a>
+				<a href="#">衣联网</a>
+				<a href="#">播视网视频</a>
+			</span>
+		</div>
+	</footer>
+
+	<!-- 黑色右边栏 -->
+	<div class="fixedNav">
+		<ul>
+			<li><a href="#"><i class="iconfont1 fontS">&#xe68c;</i>购物车</a></li>
+			<li><a href="#"><i class="iconfont1 fontS">&#xe625;</i>优惠券</a></li>
+			<li><a href="#"><i class="iconfont1 fontS">&#xe628;</i>钱包</a></li>
+			<li><a href="#"><i class="iconfont1 fontS">&#xe646;</i>足迹</a></li>
+		</ul>
+		<div class="top"><a href="#"><i class="iconfont1 fontS">&#xe600;</i><br>top</a></div>
+	</div>	

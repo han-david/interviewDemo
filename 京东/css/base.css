@@ -1,0 +1,49 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	border:0px;
+	/*-webkit-box-sizing:border-box;*/
+}
+body{
+	font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    cursor: default;
+}
+.clear{
+	clear: both;
+}
+.clearfix:after{
+	content:""; 
+	display:block; 
+	visibility:hidden; 
+	height:0; 
+	clear:both;
+}
+.clearfix{zoom:1;}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+button{
+	cursor: pointer;
+}
+img{
+	border: none;
+	background: none;
+	vertical-align: middle;
+}
+ul,ol,li{
+	list-style-type: none;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}

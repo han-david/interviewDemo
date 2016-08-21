@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <!-- 导航部分 -->
+    <nav class="navbar navbar-top navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="image/logo.png" height="54" width="213">
+      </a>
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-center">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="whoweare.html">我们是谁</a></li>
+        <li><a href="solution.html" class="active">解决方案</a></li>
+        <li><a href="#">如何使用</a></li>
+        <li><a href="#">加入我们</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">登录</a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!--  /.container-fluid --> 
+</nav> 
+    <!-- 实现产品 -->
+    <div class="container">
+      <div class="row hero">
+        <div class="col-xs-12 col-md-6">
+          <h1>实现您关于产品的一切想象</h1>
+        </div>
+        <div class="hidden-xs hidden-sm col-md-6 computer">
+              <img src="image/2.png" width="70%">
+            </div>
+      </div>
+
+    </div>
+    <!-- 解决方案 -->
+     <div class="subnav">
+        <ul class="nav">
+          <li><a href="#testimonials" class="active">解决方案</a></li>
+          <li><a href="#case-studies">案例展示</a></li>
+        </ul>
+      </div>
+
+      <div id="testimonials" class="zigzag padding-lg gray">
+        <div class="container">
+          <div class="padding-xs header">
+            <h3>解决方案</h3>
+            <p>MVP01在多种平台的解决方案</p>
+          </div>
+          <div class="padding-xs">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="card testimonial">
+              <img src="image/111.png">
+              <p style="font-size:x-large;color:#1dc901;font-weight:700">App开发</p>
+              <p>基于iOS、Android、Windows Phone平台帮助您开发各类App。涵盖资讯、社交、电商、视频、音乐、本地服务、企业服务、互联网金融等各个领域。项目开发过程包括：需求分析、交互设计、UI设计、客户端开发、后台API开发、后台业务管理开发、项目测试验收、项目部署、后期质保。同时也会跟进您项目具体需求直接从某个过程阶段开始，比如您项目已经有了交互设计，那我们直接从UI设计开始。整个项目过程都可以通过本平台的项目管理系统进行跟踪，开发到Beta版内测阶段，直接可以在平台下载内测版App进行安装直接体验开发成果。</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 pull-right">
+             <div class="card testimonial">
+              <img src="image/222.png">
+              <p style="font-size:x-large;color:#1dc901;font-weight:700">网站&H5开发</p>
+              <p>基于Nginx、Apache、Rails 等流行Web框架，搭配Tomcat、Resin等动态Web容器，使用Java、PHP、Ruby、Node.js技术实现业务逻辑，数据库建议使用MySQL、PostgreSQL、MongoDB等常用数据库产品，并基于Bootstrap等前端框架实现页面响应式展示。跟进您项目需求酌情考虑是否需要就SSL安全访问，网站素材文件建议使用云存储CDN解决方案。项目开发过程包括：需求分析、交互设计、UI设计、前端界面开发、后台逻辑实现、项目测试验收、项目部署、后期质保。前端静态界面开发完毕后，可以在线实时浏览仿真页面效果。</p>
+            </div>
+          </div>
+        </div>
+           <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="card testimonial">
+              <img src="image/333.png">
+              <p style="font-size:x-large;color:#1dc901;font-weight:700">微信开发</p>
+              <p>基于微信平台可实现订阅号、服务号、企业号和应用号开发产品。为了使用微信提供的更多接口，建议您的微信公众号实现加V认证，保证产品具有更好的体验。可实现微信支付、调用微信JS-SDK、微信消息模版、消息管理、用户管理、微信门店、微信多客服、微信摇一摇等定制开发。主要用到后台技术（与网站开发用到的技术类似），业务逻辑功能可能会多余前端页面展示。微信的服务号、应用号和企业号较为适合进行定制化开发，开发中可以通过测试公众号进行实时体验开发成果，与真实体验十分相似。</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 pull-right">
+             <div class="card testimonial">
+              <img src="image/444.png">
+              <p style="font-size:x-large;color:#1dc901;font-weight:700">IoT(物联网)</p>
+              <p>未来大部分设备都将智能化，不仅产生数据而且消费数据。尤其是通过互联网进行连接的各种各样的嵌入式传感器、设备及系统。特别是智能可穿戴设备、智能称、智能空气净化器、智能摄像头、智能路由器、智能家居等，这些设备与现有的智能手机配合使用，基于可方便管理、可实时监控，以及良好的用户交互形式（如文字、语音），给用户带来极大的便利，这些智能设备和系统深入人们的每一处生活当中，记录、分析再回馈给用户本身。因为涉及范围很广，所以我们会依据您项目的需求给你定制化解决方案。</p>
+            </div>
+          </div>
+          </div>
+           <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="card testimonial">
+              <img src="image/555.png">
+              <p style="font-size:x-large;color:#1dc901;font-weight:700">场景化人工智能</p>
+              <p>基于AI技术解决客服、金融、生活服务并结合微信和支付宝支付实现即时场景化人工智能，帮您的产品实现良好的用户体验。可实现依据自己的业务建立知识库，让业务在IM中快速运转起来，可实现文字和语言的交互，让用户体验更加自然。</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 pull-right">
+             <div class="card testimonial">
+              <img src="image/666.png">
+              <p style="font-size:x-large;color:#1dc901;font-weight:700">VR/AR</p>
+              <p>基于虚拟现实（VR）、增强现实（AR）构建具体场景应用，如：互动游戏、虚拟旅行、室内设计、互动娱乐等增强立体可视感应用。极大地提高用户在业务中的实际体验，把用户带入到一个更加立体化、更加真实的场景中去。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+      <!-- 案例展示 -->
+       <div id="case-studies" class="zigzag padding-lg">
+        <div class="container">
+          <div class="padding-xs header">
+            <h3>MVP01</h3>
+            <p class="lead">我们的目标是写出世界上所有的软件</p>
+          </div>
+          <div class="row padding-md">
+            <div class="col-md-6 col-md-push-6">
+              <h2>悠悠小秘</h2>
+              <h5>私人秘书服务</h5>
+              <p class="padding-xs">中国版Magic，基于自然的沟通对话获得需要的服务，只要您一句话即可获得所需要的一切合法服务</p>
+              <div class="tech-info">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <strong>开发者数：</strong>
+                  </div>
+                  <div class="col-sm-6">
+                    <p>4人</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <strong>花费时间：</strong>
+                  </div>
+                  <div class="col-sm-6">
+                    <p>3个月</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <strong>所用技能：</strong>
+                  </div>
+                  <div class="col-sm-6">
+                    <p>java、Web、android、iOS</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-md-pull-6">
+              <div class="wrap phone pull-left"><img src="image/phone-illustration.svg" height="400">
+                        <carousel id="konvene" interval="5000" data-ride="carousel" class="carousel slide">
+                            <div role="listbox" class="carousel-inner">
+                                <div class="item active"><img src="image/yoyoxiaomi1.png"></div>
+                                <div class="item"><img src="image/yoyoxiaomi2.png"></div>
+                                <div class="item"><img src="image/yoyoxiaomi3.png"></div>
+                                <div class="item"><img src="image/yoyoxiaomi4.png"></div>
+                                <div class="item"><img src="image/yoyoxiaomi5.png"></div>
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#konvene" data-slide-to="0" class="active"></li>
+                                <li data-target="#konvene" data-slide-to="1"></li>
+                                <li data-target="#konvene" data-slide-to="2"></li>
+                                <li data-target="#konvene" data-slide-to="3"></li>
+                                <li data-target="#konvene" data-slide-to="4"></li>
+                            </ol>
+                        </carousel>
+                    </div>
+            </div>
+          </div>
+            <div class="row padding-md">
+              <div class="col-md-6">
+                <h2>DDay App</h2>
+                <h5>与全球创新面对面</h5>
+                <p class="padding-xs">致力于推进中国商业与全球社区的深度交流及创新融合。让具有前瞻视野的中国企业家与全球商业领导面对面，交融思想与资源。</p>
+                <div class="tech-info">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <strong>开发者数：</strong>
+                  </div>
+                  <div class="col-sm-6">
+                    <p>2</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <strong>花费时间：</strong>
+                  </div>
+                  <div class="col-sm-6">
+                    <p>2个月</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <strong>所用技能：</strong>
+                  </div>
+                  <div class="col-sm-6">
+                    <p>iOS、Web</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-6">
+                <div class="wrap phone pull-right">
+                  <img src="image/phone-illustration.svg" height="400">
+                          <carousel id="konvene" interval="5000" data-ride="carousel" class="carousel slide">
+                            <div role="listbox" class="carousel-inner">
+                                <div class="item active"><img src="image/dday1.png"></div>
+                                <div class="item"><img src="image/dday2.png"></div>
+                                <div class="item"><img src="image/dday3.png"></div>
+                                <div class="item"><img src="image/yoyoxiaomi4.png"></div>
+                                <div class="item"><img src="image/yoyoxiaomi5.png"></div>
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#konvene" data-slide-to="0" class="active">
+                                </li>
+                                <li data-target="#konvene" data-slide-to="1"></li>
+                                <li data-target="#konvene" data-slide-to="2"></li>
+                                <li data-target="#konvene" data-slide-to="3"></li>
+                                <li data-target="#konvene" data-slide-to="4"></li>
+                            </ol>
+                        </carousel>
+                    </div>
+              </div>
+            </div>
+            <div class="row padding-md">
+              <div class="col-md-6 col-md-push-6">
+                 <h2>DDay Web</h2>
+                    <h5>英文网站</h5>
+                    <p class="padding-xs">向国外的科技企业提供投资咨询服务，将国内的投资机构介绍给国外的科技公司。</p>
+                    <div class="tech-info">
+                        <div class="row">
+                            <div class="col-sm-6"><strong>开发者数:</strong></div>
+                            <div class="col-sm-6">
+                                <p>2</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6"><strong>花费时间:</strong></div>
+                            <div class="col-sm-6">
+                                <p>一周</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6"><strong>所用技能:</strong></div>
+                            <div class="col-sm-6">
+                                <p>HTML, CSS</p>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+              <div class="col-md-6 col-md-pull-6 padding-laptop">
+                 <div class="wrap laptop"><img src="image/laptop-illustration.svg" width="500">
+                        <carousel id="clearear" interval="5000" data-ride="carousel" class="carousel slide">
+                            <div role="listbox" class="carousel-inner">
+                                <div class="item active"><img src="image/ddayweb1.png"></div>
+                                <div class="item"><img src="image/ddayweb2.png"></div>
+                                <div class="item"><img src="image/ddayweb3.png"></div>
+                            </div>
+                            
+                            <ol class="carousel-indicators ct">
+                                <li data-target="#clearear" data-slide-to="0" class="active"></li>
+                                <li data-target="#clearear" data-slide-to="1"></li>
+                                <li data-target="#clearear" data-slide-to="2"></li>
+                            </ol>
+                            </div>
+                        </carousel>
+                    </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+    <!-- 开启您的产品 -->
+    <div class="bottom-cta gray">
+      <div class="container">
+        <h2>开启您的产品</h2>
+        <a href="#" class="btn btn-primary btn-lg sta visible bn">创建项目</a>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row widgets">
+          <div class="col-xs-6 col-md-3 col-sm-6">
+            <h4>网站信息</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">我们是谁</a></li>
+                <li><a href="#">完成案例</a></li>
+                <li><a href="#">如何使用</a></li>
+                <li><a href="#">加入我们</a></li>
+              </ul>
+
+          </div>
+          <div class="col-xs-6 col-md-3 col-sm-6">
+            <h4>服务信息</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">使用条款</a></li>
+                <li><a href="#">隐私协议</a></li>
+                <li><a href="#">开票说明</a></li>
+                <li><a href="#">优站精选</a></li>
+              </ul>
+          </div>
+          <div class="col-xs-6 col-md-3 col-sm-6">
+            <h4>联系合作</h4>
+              <ul class="list-unstyled">
+                <li class="shy"><a href="#">邮箱: BD@MVP01. com</a></li>
+                <li><a href="#">电话:010-84786625</a></li>
+              </ul>
+          </div>
+          <div class="col-xs-6 col-md-3 col-sm-6">
+            <h4>公司地址</h4>
+            <address>
+              <ul class="list-unstyled">
+                <li>北京市 朝阳区</li>
+                <li>东亚望京中心A座</li>
+              </ul>
+            </address>
+          </div>
+        </div>
+        <div class="row copy">
+          <div class="col-xs-6 col-sm-4">
+            <img src="image/logomark.png" width="28%">
+          </div>
+          <div class="col-sm-4 copyright text-center"><h5>©2016 MVP01 京ICP备14038571号-3</h5></div>
+          <div class="col-sm-4 text-right">
+            <img border="0" hspace="0" vspace="0" src="image/pic1.gif">
+          </div>
+
+        </div>
+      </div>
+    </footer>
+    <div class="online">
+      <span id="iconchat" class="glyphicon glyphicon-envelope"></span>
+      <span class="line"></span>
+      <span class="chat">在线咨询</span>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
