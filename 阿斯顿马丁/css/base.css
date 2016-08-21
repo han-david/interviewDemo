@@ -1,0 +1,64 @@
+body,ul,li,p,h1,h2,h3,h4,h5,h6,button,form,fieldset,table,td,img,div,dl,dt,dd,input {
+	margin:0px;
+	padding:0px;
+}
+body {
+    font-family: "Lantinghei SC","Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
+    background-color:#fff;
+    /*overflow: hidden;*/
+    height: 100%;
+    background-image:url(../images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+ul,ol{
+	list-style:none;
+}
+img,a img {
+	border:none;
+}
+div{
+	display:block;
+}
+a {
+	text-decoration:none;
+	color: #fff;
+}
+a:hover {
+	text-decoration:none;
+}
+input,select,textarea {
+	outline:none;
+}
+textarea {
+	resize:none;
+}
+.clear:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+.clear {
+	zoom:1;
+}
+.auto {
+	margin: 0px auto;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float: right;
+}
+
+span{
+	font-family: "iconfont" !important;
+}
+.bg{
+	position: absolute;
+	overflow: hidden;
+	margin-bottom: 0;
+	padding-top: 0;
+	background-position: center;
+	text-align: center;
+}
