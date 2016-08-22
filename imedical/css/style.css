@@ -1,0 +1,769 @@
+@charset "utf-8"
+/* ---------------------------------------------------------------------------- 
+/* ------------------------------------Reset----------------------------------- 
+/* ---------------------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #4C4C4C;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.clearfix:after,
+.clearfix:before {
+    clear: both;
+    content: '\0020';
+    display: block;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+
+/* ---------------------------------------------------------------------------- 
+/* ------------------------------------Html-Body------------------------------- 
+/* ---------------------------------------------------------------------------- */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #efefef;
+    color: #666;
+    ;
+    font: 14px/22px "Microsoft YaHei", arial, serif;
+    font-family: Montserrat, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 16px;
+    font-family: 'Microsoft yahei', Arial, sans-serif;
+    font-weight: 500;
+    color: #333;
+}                                                                                                                                  
+
+p {
+    margin: 0 0 10px;
+    font-family: "微软雅黑", "黑体", "新宋体", "Arial Unicode MS";
+}
+
+.wrap {
+    position: relative;
+    width: 960px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.to-top a img {
+    width: 20px;
+    padding: 10px;
+    background: #fff;
+    opacity: .6;
+    border-radius: 6px;
+}
+/* ---------------------------------------------------------------------------- 
+/* ------------------------------------header------------------------------- 
+/* ---------------------------------------------------------------------------- */
+
+.TopTable {
+    height: 35px;
+    background: url(../res/topline.gif) repeat;
+    width: 100%;
+}
+
+.WebHeader {
+    width: 100%;
+    height: 60px;
+}
+
+.HeadRow {
+    width: 960px;
+    height: 35px;
+    margin: 40px auto;
+    vertical-align: top;
+}
+
+.logo {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo img {
+    height: 100%
+}
+
+.nav {
+    float: right;
+    text-align: center;
+    display: inline-block;
+}
+
+.nav ul {
+    margin-top: 8px;
+    padding: 0;
+}
+
+.nav > ul > li {
+    width: 80px;
+    height: 35px;
+    margin-left: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav a {
+    font-size: 16px;
+    color: #111;
+    font-family: 微软雅黑, 宋体;
+}
+
+.nav > ul > li:hover {
+    border-bottom: 2px solid #2fb789;
+}
+
+.nav .active {
+    border-bottom: 2px solid #2fb789;
+}
+
+.nav b {
+    margin-top: 9px;
+    margin-left: 8px;
+    float: right;
+    display: inline-block;
+    line-height: 35px;
+    font-weight: bold;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #333;
+    /*border-bottom-color: #333;*/
+}
+
+.down-con {
+    position: absolute;
+    margin-top: 1px;
+    padding-left: 20px;
+    width: 400px;
+    z-index: 99;
+    background: #fff;
+    border-top: 1px solid #9c9c9c;
+    display: none;
+}
+
+.pdtLi:hover .down-con {
+    display: block;
+}
+
+.down-con ul {
+    list-style-type: circle;
+}
+
+.down-con a {
+    color: #337ab7;
+    font-size: 14px;
+}
+
+.down-con a:hover {
+    color: #FA3E04;
+}
+
+.down-con >ul > li {
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+}
+
+.menu {
+    webkit-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    border-radius: .3rem;
+    width: 45px;
+    height: 45px;
+    background: #00bb9c;
+    position: fixed;
+    bottom: 180px;
+    right: 15px;
+    z-index: 10;
+    display: none;
+}
+
+.menu img {
+    width: 80%;
+    margin: 3px;
+}
+
+.sideNav {
+    margin-top: 55px;
+    width: 40%;
+    height: 100%;
+    right: 0;
+    position: fixed;
+    background: #D1ECE7;
+    display: none;
+    z-index: 20;
+    border-left: 3px solid #D1ECE7;
+}
+
+.sideNav .navBtn {
+    height: 55px;
+    line-height: 50px;
+    width: 100%;
+    z-index: 20;
+}
+
+.navBtn img {
+    width: 40px;
+    padding-left: 2.5rem;
+    vertical-align: middle;
+}
+
+.navBtn.on {
+    background: #fff;
+}
+
+.navBtn a {
+    line-height: 55px;
+    color: #666;
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.listHead {
+    width: 100%;
+    height: 70px;
+    background: #1DB8A8;
+    line-height: 70px;
+}
+
+.listHead h4 {
+    font-size: 18px;
+    color: #fff;
+}
+
+
+/* ---------------------------------------------------------------------------- 
+/* -------------------------------------banner--------------------------------- 
+/* ---------------------------------------------------------------------------- */
+
+.banner {
+    width: 100%;
+    height: 380px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgs {
+    margin: 0;
+    padding: 0;
+    margin-left: 0;
+}
+
+.imgs img {
+    width: 100%;
+    height: 380px;
+}
+
+.banner .imgs li {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    /* IE8 以及更早的浏览器 */
+}
+
+.banner .imgs li.on {
+    opacity: 1;
+    filter: Alpha(opacity=100);
+    /* IE8 以及更早的浏览器 */
+}
+
+.banner .imgs li {
+    margin: 0;
+    float: left;
+}
+
+.banner .btn {
+    display: block;
+    height: 75px;
+    background: rgba(3, 3, 3, 0.3);
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    cursor: pointer;
+    color: #FFF;
+    opacity: 0;
+    z-index: 100;
+    filter: Alpha(opacity=0);
+    /*IE8 以及更早的浏览器*/
+    -webkit-transition: all 0.6s ease;
+    /*Safari and Chrome*/
+    -moz-transition: all 0.6s ease;
+    /*Firefox*/
+    -ms-transition: all 0.6s ease;
+    /*IE 9*/
+    -o-transition: all 0.6s ease;
+    /*Opera*/
+    transition: all 0.6s ease;
+}
+
+.banner:hover .btn {
+    opacity: 1;
+    filter: Alpha(opacity=100);
+    /* IE8 以及更早的浏览器 */
+}
+
+.banner .btn_l {
+    left: 20px;
+}
+
+.banner .btn_r {
+    right: 20px;
+}
+
+.banner_c img {
+    width: 100%;
+}
+
+
+/* ---------------------------------------------------------------------------- 
+/* ------------------------------------section------------------------------- 
+/* ---------------------------------------------------------------------------- */
+
+.mulConList {
+    padding: 40px 0 40px;
+    text-align: center;
+}
+
+.inner-container {
+    height: auto;
+    margin-top: 30px;
+}
+
+.inner-container h3 {
+    font-size: 18px;
+    color: #195D51;
+    font-family: "微软雅黑", "宋体";
+}
+
+.pro-container h3:hover {
+    color: #FA3E04;
+}
+
+.product_img {
+    text-align: center;
+}
+.product_img img{
+    max-width: 70%;
+}
+
+.product_p {
+    margin-left: 40px;
+    text-indent: 2em;
+}
+
+.inner-container p {
+    margin: 0;
+}
+
+.row {
+    margin: 10px 0 10px;
+}
+
+.title_1 {
+    margin-top: 20px;
+    margin-left: 7px;
+    width: 100%;
+    line-height: 100%;
+    text-align: left;
+}
+
+.title_1 span {
+    line-height: 46px;
+    color: #00bb9c;
+    font-family: 微软雅黑;
+    font-weight: normal;
+    font-size: 30px;
+    display: inline;
+}
+
+.title_1 a {
+    display: inline;
+}
+
+.title_1 p {
+    line-height: 46px;
+    float: right;
+    color: #898888;
+    font-size: 14px;
+    display: inline;
+}
+
+.title_2 {
+    margin-left: 10px;
+    width: 70px;
+    line-height: 130%;
+    text-align: center;
+}
+
+.titileHead {
+    text-align: center;
+    font-size: 36px;
+}
+
+.BorderLine {
+    height: 5px;
+    width: 100%;
+}
+
+.pro-container {
+    margin: 100px 20px;
+}
+
+.pro-container img {
+    width: 100%;
+    height: 148px;
+}
+
+.BorderLine:after,
+.BorderLine_b:after {
+    clear: both;
+    content: '\0020';
+    display: block;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.MainLine {
+    width: 70px;
+    float: left;
+    z-index: 10;
+    border-bottom: 2px solid #218100;
+}
+
+.MainLine_b {
+    width: 140px;
+    float: left;
+    z-index: 10;
+    border-bottom: 2px solid #545454;
+}
+
+.SideLine {
+    width: 100%;
+    border-top: 2px solid #9c9c9c;
+}
+
+.SideLine_b {
+    width: 100%;
+    border-top: 2px solid #e6e6e6;
+}
+
+.table_1 {
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #9c9c9c;
+    margin-right: 20px;
+}
+
+.table_1 a {
+    margin-left: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    /* Opera 9-10 */
+    text-overflow: ellipsis;
+}
+
+.TableTile {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: bottom;
+}
+
+.TableTile img {
+    float: left;
+}
+
+.service {
+    margin: 5px 0 5px;
+    height: 20px;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.service img {
+    margin-right: 10px;
+}
+
+
+/* ---------------------------------------------------------------------------- 
+/* ------------------------------------section-about-------------------------- 
+/* ---------------------------------------------------------------------------- */
+
+.tabBtn {
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    border-right: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.tabTable_m {
+    display: none;
+}
+
+.tabBtn span {
+    color: #333;
+    font-size: 12px;
+    sfont-family: "微软雅黑", "宋体";
+}
+
+.tabTable .on {
+    background-color: #33BF8E;
+}
+
+.tabTable .on span {
+    color: #fff;
+}
+
+.article article {
+    min-height: 600px;
+    display: none;
+}
+
+.article article.on {
+    display: block;
+}
+
+.scrollup {
+    width: 100%;
+    height: 1.6rem;
+    bottom: 0;
+    margin-top: 10px;
+    z-index: 10;
+    line-height: 1.6rem;
+    font-size: .9rem;
+    font-weight: bold;
+    background: #33BF8E;
+    text-align: center;
+    color: #fff;
+    display: none;
+}
+
+.readMore {
+    width: 100%;
+    bottom: 0;
+    height: 1.6rem;
+}
+
+.readMore a {
+    float: right;
+    margin-right: 40px;
+    width: 80px;
+    color: #4C4C4C;
+    line-height: 1.8;
+    font-size: 12px;
+}
+
+
+/* ---------------------------------------------------------------------------- 
+/* ------------------------------------content------------------------------- 
+/* ---------------------------------------------------------------------------- */
+
+.content {
+    text-align: center;
+}
+
+.content img {
+    width: 100%;
+    margin: 5px;
+}
+
+.example img {
+    width: 100%;
+}
+
+.advs {
+    margin-top: 20px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.advs img {
+    width: 40%;
+    vertical-align: top;
+    margin-right: 10px;
+    float: left;
+}
+
+.advsContent {
+    line-height: 1.8;
+    padding: 0;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: normal;
+    width: 100%;
+    text-align: left;
+    display: inline;
+}
+
+.advsContent p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.advsContent h3 {
+    font-size: 18px;
+    color: #195D51;
+    font-family: "微软雅黑", "宋体";
+}
+
+
+/* ---------------------------------------------------------------------------- 
+/* ------------------------------------news------------------------------- 
+/* ---------------------------------------------------------------------------- */
+
+.newsConrent {
+    width: 100%;
+    min-height: 600px;
+    border: 1px solid #d7d7d7;
+}
+
+.pagenation {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.pagenation .prev,
+.pagenation .next {
+    width: 45px;
+    display: inline-block;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.pagenation .prev:active,
+.pagenation .next:active,
+.pagenation .pagno:active {
+    box-shadow: 1px 1px 1px #888888 inset;
+}
+
+.pagenation .pagno {
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+
+/* ---------------------------------------------------------------------------- 
+/* ------------------------------------footer------------------------------- 
+/* ---------------------------------------------------------------------------- */
+
+footer {
+    margin-top: 40px;
+    height: 125px;
+    width: 100%;
+    background-color: #4a4a4a;
+}
+
+.Lfoot {
+    margin-top: 25px;
+    float: left;
+}
+
+.Lfoot img {
+    height: 30px;
+}
+
+footer p,
+footer a {
+    color: #AEAEAE;
+    line-height: 1.8px;
+    font-size: 12px;
+    font-family: "微软雅黑", "黑体", "新宋体", "Arial Unicode MS";
+    display: inline;
+}
+
+.Rfoot {
+    margin-top: 40px;
+    float: right;
+}
+
+.Rfoot li {
+    height: 19px;
+    line-height: 15px;
+    padding-right: 7px;
+    display: inline-block;
+    border-right: 1px solid #AEAEAE;
+}
+
+.Rfoot a {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ---------------------------------------------------------------------------- 
+/* ----------------------------responsive design------------------------------- 
+/* ---------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+    .wrap {
+        width: 100%;
+    }
+    .HeadRow {
+        width: 100%;
+    }
+    .banner,
+    .TopTable,
+    .nav,
+    .Rfoot {
+        display: none;
+    }
+    .menu,
+    .scrollup {
+        display: block;
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+    }
+    .tabTable_m {
+        display: block;
+    }
+    .pro-container {
+        margin: 0px 20px;
+    }
+}
